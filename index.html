@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Conversor de Moedas</title>
+        <link rel="stylesheet" href="./assets/style.css">
+        <script src="./scripts/script.js"></script>
+    </head>
+        <body>
+            <header>
+                <p id="Title">DevClub - Conversor de Dinheiro</p>
+            
+            </header>
+            <div class = wrapper>
+            <main>
+                    <label>
+                     <p class="conversy-fields">Converter <b>de</b></p>
+                        <select name="Escolha a moeda" class="converter-de">
+                            <option value="Dolar Americano">US$ Dolar Americano</option>
+                            <option value="Real Brasileiro">R$ Real Brasileiro</option>
+                            <option value="Euro">€ Euro</option>
+                        </select>
+                    </label>
+                    <label>
+                        <p class="conversy-fields">Converter <b>para</b></p>
+                        <select name="Escolha a moeda" class="converter-para">
+                            <option value="Dolar Americano">US$ Dolar Americano</option>
+                            <option value="Real Brasileiro">R$S Real Brasileiro</option>
+                            <option value="Euro">€ Euro</option>
+                        </select>
+                    </label>
+                    <label>
+                        <p class="conversy-fields">Valor</p>
+                        <input placeholder="Valor" type="number">
+                    </label>
+                    <button type="button">Converter</button>
+            </main>
+            <section>
+                    <div class="currency-box">
+                        <img src="./assets/imgs/brasil.png">
+                        <p class="currency-name">Valor</p>
+                        <p class="currency-value">R$ 10.000,00</p>
+                    </div>
+                    <img src="./assets/imgs/arrow.png" class="arrow">
+                    <div class="currency-box">
+                        <img src="./assets/imgs/eua.png">
+                        <p class="currency-name">Valor</p>
+                        <p class="currency-value">US$ 1902,33</p>
+                    </div>
+            </section>
+            </div>
+        </body>
+</html>
