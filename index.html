@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Conversor de Moedas</title>
         <link rel="stylesheet" href="./assets/style.css">
-        <script src="./scripts/script.js"></script>
     </head>
         <body>
             <header>
@@ -15,39 +14,40 @@
             <main>
                     <label>
                      <p class="conversy-fields">Converter <b>de</b></p>
-                        <select name="Escolha a moeda" class="converter-de">
-                            <option value="Dolar Americano">US$ Dolar Americano</option>
-                            <option value="Real Brasileiro">R$ Real Brasileiro</option>
-                            <option value="Euro">€ Euro</option>
+                        <select name="Escolha a moeda" class="converter-de" id="moeda1">
+                            <option value="USD">US$ Dolar Americano</option>
+                            <option value="BRL">R$ Real Brasileiro</option>
+                            <option value="EUR">€ Euro</option>
                         </select>
                     </label>
                     <label>
                         <p class="conversy-fields">Converter <b>para</b></p>
-                        <select name="Escolha a moeda" class="converter-para">
-                            <option value="Dolar Americano">US$ Dolar Americano</option>
-                            <option value="Real Brasileiro">R$S Real Brasileiro</option>
-                            <option value="Euro">€ Euro</option>
+                        <select name="Escolha a moeda" class="converter-para" id="moeda2">
+                            <option value="USD">US$ Dolar Americano</option>
+                            <option value="BRL">R$ Real Brasileiro</option>
+                            <option value="EUR">€ Euro</option>
                         </select>
                     </label>
                     <label>
                         <p class="conversy-fields">Valor</p>
-                        <input placeholder="Valor" type="number">
+                        <input placeholder="Valor" type="number" id="valor">
                     </label>
-                    <button type="button">Converter</button>
+                    <button type="button" id="convert-button">Converter</button>
             </main>
             <section>
                     <div class="currency-box">
-                        <img src="./assets/imgs/brasil.png">
+                        <img src="./assets/imgs/brasil.png" id="firstFlag">
                         <p class="currency-name">Valor</p>
-                        <p class="currency-value">R$ 10.000,00</p>
+                        <p class="currency-value" id="InitialValue">R$ 10.000,00</p>
                     </div>
                     <img src="./assets/imgs/arrow.png" class="arrow">
                     <div class="currency-box">
-                        <img src="./assets/imgs/eua.png">
+                        <img src="./assets/imgs/eua.png" id="secondFlag">
                         <p class="currency-name">Valor</p>
-                        <p class="currency-value">US$ 1902,33</p>
+                        <p class="currency-value" id="FinalValue">US$ 1902,33</p>
                     </div>
             </section>
             </div>
+        <script src="./scripts/script.js"></script>
         </body>
 </html>
