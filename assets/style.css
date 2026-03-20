@@ -72,7 +72,7 @@ button:active{
 section{
     border: 1px solid #1B83E2;
     border-radius: 4px;
-    height: 50%;
+    height: 50vh;
     align-content: center;
 }
 .currency-box{
@@ -95,7 +95,7 @@ section{
     display: block;
     margin: 15px auto;
 }
-@media screen and (max-height: 860px){
+@media screen and (max-height: 830px){
     main{
         height: 53%;
         display: block;
@@ -105,11 +105,25 @@ section{
         display: block;
         height: 47%;
     }
+    
+    input, select, button{
+        width: 100%;
+        height: 15%;
+        border: #bababa solid 1px;
+        border-radius: 4px;
+        margin-bottom: 12px;
+    }  
+    .currency-box{
+        text-align: center;
+        padding: 1vh
+    }
+    .arrow{
+        margin: 0.5vh auto;
+    }
 }
 
 @media screen  and (max-width: 615px){
     .wrapper{
         width: 100vw;
-    }
-    
+    } 
 }
