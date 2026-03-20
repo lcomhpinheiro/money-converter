@@ -95,7 +95,7 @@ section{
     display: block;
     margin: 15px auto;
 }
-@media screen and (max-height: 830px){
+@media screen and (max-height: 860px){
     main{
         height: 53%;
         display: block;
