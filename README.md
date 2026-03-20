@@ -10,7 +10,7 @@ A simple, fast, and responsive currency converter built with **HTML, CSS, and va
   - 🇧🇷 Brazilian Real (BRL)
   - 🇺🇸 US Dollar (USD)
   - 🇪🇺 Euro (EUR)
-- Real-time exchange rates via API
+- daily exchange rates via API
 - Automatic currency formatting
 - Clean and responsive UI
 - Dynamic flag updates based on selected currencies
