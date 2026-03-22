@@ -95,6 +95,11 @@ section{
     display: block;
     margin: 15px auto;
 }
+
+#valor{
+    padding: 15px;
+}
+
 @media screen and (max-height: 856px){
     main{
         height: 53%;

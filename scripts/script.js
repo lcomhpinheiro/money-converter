@@ -18,6 +18,8 @@ const currencyConfig = {
 
 InitValue.innerText = "R$ --"
 FinalValue.innerText = "US$ --"
+elements.valor.value = "0.00"
+let cents = 0
 
 
 const formatCurrency = (value, currency) => {
@@ -45,7 +47,7 @@ const updateUI = (element, value, currency, flagEl) => {
 const convertValues = async () => {
     const from = elements.moeda1.value
     const to = elements.moeda2.value
-    const input = Number(elements.valor.value)
+    const input = Number(elements.valor.value.replace(",","."))
 
     if (!input) return
 
@@ -61,4 +63,24 @@ const convertValues = async () => {
     }
 }
 
+
+
 button.addEventListener('click', convertValues)
+elements.valor.addEventListener('keydown', function(e){
+    if (e.key === "Backspace"){
+        cents = Math.floor(cents / 10)
+    }
+
+    else if (!isNaN(e.key)){
+        cents = cents * 10 + Number(e.key)
+    }else{
+        e.preventDefault()
+        return
+    }
+
+    e.preventDefault()
+
+    let newValue = (cents / 100).toFixed(2)
+    newValue = newValue.replace(".", ",")
+    elements.valor.value = newValue
+})
